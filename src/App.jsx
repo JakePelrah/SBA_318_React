@@ -1,19 +1,15 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import Gameboard from './components/gameboard/gameboard'
+
 
 function App() {
 
 
 
-  useEffect(() => {
-    fetch('questions')
-      .then(res => res.json())
-      .then(console.log)
-  }, [])
-
   return (
     <>
-
+      <Gameboard />
     </>
   )
 }
