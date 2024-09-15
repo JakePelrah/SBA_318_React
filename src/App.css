@@ -1,0 +1,75 @@
+@font-face {
+    font-family: category;
+    src: url(../public/fonts/Swiss\ 911\ Ultra\ Compressed\ BT.woff);
+}
+
+@font-face {
+    font-family: answer;
+    src: url(../public/fonts/ITC\ Korinna\ Std\ Heavy.otf);
+}
+
+body {
+    background-color: #333;
+}
+
+.display {
+    background-color: rgb(3, 8, 116);
+    color: rgb(206, 166, 90);
+    font-weight: bold;
+    height: 6em;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .25em solid black;
+    border-radius: .25em;
+}
+
+.answer-title {
+    font-family: category;
+    font-size: 4em;
+    text-shadow: 5px 4px 0px rgba(0, 0, 0, 0.93);
+    letter-spacing: .075em;
+}
+
+.answer-title::first-letter {
+    font-size: .85em;
+    vertical-align: 6%;
+    letter-spacing: .15em;
+}
+
+.category {
+    color: rgb(255, 255, 255);
+    margin-bottom: .35em;
+}
+
+.category-title {
+    font-family: category;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-shadow: 5px 4px 0px rgba(0, 0, 0, 0.93);
+    letter-spacing: .05em;
+}
+
+.modal-content {
+    background-color: #030874 !important;
+    font-family: answer;
+    font-size: 1.5em;
+    color: aliceblue;
+    text-shadow: 5px 4px 0px rgba(0, 0, 0, 0.93);
+}
+
+.category-answers {
+    background-color: black;
+}
+
+.category-answers:first-child {
+    border-radius: 2em 0 0 2em;
+}
+
+.category-answers:last-child {
+    border-radius: 0em 2em 2em 0em;
+}
+.answer{
+    cursor: pointer;
+}
