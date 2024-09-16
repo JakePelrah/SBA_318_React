@@ -7,15 +7,12 @@ import Scoreboard from './components/ScoreBoard'
 
 function App() {
 
-
-
-
   return (
-    <div className=''>
+    <>
       <Gameboard />
-      <AnswerModal/>
-      <Scoreboard/>
-    </div>
+      <AnswerModal />
+      <Scoreboard />
+    </>
   )
 }
 

@@ -1,19 +1,18 @@
 import { useGameContext } from "./GameProvider"
 
 export default function AnswerModal() {
-    const { setScore, score, modal } = useGameContext()
+    const { setScore, score, modal, incrementCount } = useGameContext()
 
 
-    function submit() {
+    function submit(e) {
         const scoreData = modal._element.querySelector('[data-value]')
         setScore(score + parseInt(scoreData.dataset.value))
+        incrementCount()
         modal.hide()
-
-        
     }
 
     return (
-        <div id="answer-modal" class="modal" tabindex="-1">
+        <div id="answer-modal" class="modal" data-bs-backdrop="static" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -26,7 +25,7 @@ export default function AnswerModal() {
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="option" id="option-two"  />
+                            <input class="form-check-input" type="radio" name="option" id="option-two" />
                             <label class="form-check-label" >
                                 Default radio
                             </label>
@@ -39,7 +38,7 @@ export default function AnswerModal() {
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="option" id="option-four"  />
+                            <input class="form-check-input" type="radio" name="option" id="option-four" />
                             <label class="form-check-label" >
                                 Default checked radio
                             </label>

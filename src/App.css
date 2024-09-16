@@ -1,11 +1,11 @@
 @font-face {
     font-family: category;
-    src: url(../public/fonts/Swiss\ 911\ Ultra\ Compressed\ BT.woff);
+    src: url(/fonts/Swiss\ 911\ Ultra\ Compressed\ BT.woff);
 }
 
 @font-face {
     font-family: answer;
-    src: url(../public/fonts/ITC\ Korinna\ Std\ Heavy.otf);
+    src: url(/fonts/ITC\ Korinna\ Std\ Heavy.otf);
 }
 
 body {
