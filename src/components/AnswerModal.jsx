@@ -1,46 +1,48 @@
 import { useGameContext } from "./GameProvider"
 
 export default function AnswerModal() {
-    const { setScore, score, modal, incrementCount } = useGameContext()
+    const {submitAnswer } = useGameContext()
 
 
     function submit(e) {
-        const scoreData = modal._element.querySelector('[data-value]')
-        setScore(score + parseInt(scoreData.dataset.value))
-        incrementCount()
-        modal.hide()
+        // get check value
+        const radioButtons = document.getElementsByName('question')
+        const checkedRadio = [...radioButtons].filter(btn => btn.checked)[0]
+        submitAnswer(checkedRadio)
     }
+
+
 
     return (
         <div id="answer-modal" class="modal" data-bs-backdrop="static" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
+
                         <p id="modal-answer"></p>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="option" id="option-one" />
+                            <input class="form-check-input" type="radio" value="0" name="question" id="option-one" />
                             <label class="form-check-label" >
-                                Default radio
+                                Question
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="option" id="option-two" />
+                            <input class="form-check-input" type="radio" value="1" name="question" id="option-two" />
                             <label class="form-check-label" >
-                                Default radio
+                                Question
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="option" id="option-three" />
-                            <label class="form-check-label" >
-                                Default radio
+                            <input class="form-check-input" type="radio" value="2" name="question" id="option-three" />
+                            <label class="form-check-label">
+                                Question
                             </label>
                         </div>
-
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="option" id="option-four" />
+                            <input class="form-check-input" type="radio" value="3" name="question" id="option-four" />
                             <label class="form-check-label" >
-                                Default checked radio
+                                Question
                             </label>
                         </div>
 

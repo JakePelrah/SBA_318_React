@@ -84,3 +84,22 @@ body {
     background-color: #030874;
     pointer-events: none;
 }
+
+.navbar{
+    border-bottom: 1px solid black;
+}
+.navbar-brand{
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+}
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+}
+
+.navbar-toggler{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(1000%);
+}
+
+.negative{
+    color: red;
+}

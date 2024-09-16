@@ -8,6 +8,8 @@ export default function GameProvider({ children }) {
     const [score, setScore] = useState(0)
     const [modal, setModal] = useState(null)
     const [count, setCount] = useState(0)
+    const [answerValue, setAnswerValue] = useState(0)
+
 
     useEffect(() => {
         setModal(new bootstrap.Modal('#answer-modal', { keyboard: false }))
@@ -17,8 +19,23 @@ export default function GameProvider({ children }) {
         modal.show()
     }
 
+    function submitAnswer(answerNum) {
+        answerNum = parseInt(answerNum.value)
+        // correct
+        if (answerNum === 0) {
+            setScore(score + answerValue)
+        }
+        else{
+            setScore(score - answerValue)
+        }
+
+        incrementCount()
+        modal.hide()
+
+    }
+
+
     function incrementCount() {
-        console.log(count)
         if (count === 29) {
             alert('no more question')
             setCount(0)
@@ -30,7 +47,7 @@ export default function GameProvider({ children }) {
     return (
         <GameContext.Provider value={{
             setScore, score, showAnswerModal,
-            modal, incrementCount
+            modal, incrementCount, setAnswerValue, submitAnswer
         }}>
             {children}
         </GameContext.Provider>

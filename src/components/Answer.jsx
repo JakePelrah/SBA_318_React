@@ -1,22 +1,24 @@
 import { useGameContext } from "./GameProvider"
 
-export default function Answer({ price = 0, clue = 'Etiam sodales at neque ut porta. Aenean consectetur tincidunt libero id pulvinar. Nulla non vestibulum libero. Cras id varius elit. Aenean mollis quam ac diam interdum interdum. Curabitur vestibulum facilisis leo sit amet varius. Donec lobortis tristique ex, vitae tincidunt mauris vehicula quis. Pellentesque tempor a ligula ac consequat.' }) {
+export default function Answer({ answerValue = 0 }) {
 
-    const { showAnswerModal, modal } = useGameContext()
+    const { showAnswerModal, setAnswerValue } = useGameContext()
 
     function answerClicked(e) {
 
-        e.target.classList.add('disabled')
+        // clear the $ amount
         e.target.querySelector('.answer-title').innerText = ''
 
+        // remove ability to click
+        e.target.classList.add('disabled')
+
+        // show answer modal
         showAnswerModal()
 
-        const answerDiv = modal._element.querySelector('#modal-answer')
-        answerDiv.innerText = clue
-        answerDiv.dataset.value = price
+        setAnswerValue(answerValue)
     }
 
     return (<div onClick={answerClicked} className='answer display'>
-        <span className='answer-title'> ${price}</span>
+        <span className='answer-title'> ${answerValue}</span>
     </div>)
 }
