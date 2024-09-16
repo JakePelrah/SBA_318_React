@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Gameboard from './components/Gameboard'
 import AnswerModal from './components/AnswerModal'
+import Scoreboard from './components/ScoreBoard'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className=''>
       <Gameboard />
       <AnswerModal/>
+      <Scoreboard/>
     </div>
   )
 }

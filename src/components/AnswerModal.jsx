@@ -1,11 +1,15 @@
+import { useGameContext } from "./GameProvider"
 
 export default function AnswerModal() {
+    const { setScore, score, modal } = useGameContext()
 
-    function closeModal() {
-        // const myModal = new bootstrap.Modal('#answer-modal', {
-        //     keyboard: false
-        // })
-        // myModal.hide()
+
+    function submit() {
+        const scoreData = modal._element.querySelector('[data-value]')
+        setScore(score + parseInt(scoreData.dataset.value))
+        modal.hide()
+
+        
     }
 
     return (
@@ -14,6 +18,35 @@ export default function AnswerModal() {
                 <div class="modal-content">
                     <div class="modal-body">
                         <p id="modal-answer"></p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="option" id="option-one" />
+                            <label class="form-check-label" >
+                                Default radio
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="option" id="option-two"  />
+                            <label class="form-check-label" >
+                                Default radio
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="option" id="option-three" />
+                            <label class="form-check-label" >
+                                Default radio
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="option" id="option-four"  />
+                            <label class="form-check-label" >
+                                Default checked radio
+                            </label>
+                        </div>
+
+                        <button onClick={submit} >Submit</button>
+
                     </div>
                 </div>
             </div>

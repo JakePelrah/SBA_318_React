@@ -6,7 +6,7 @@ export default function Gameboard() {
 
     return (
 
-        <div className='d-flex justify-content-center mt-5'>
+        <div className='d-flex justify-content-center mt-2'>
 
             <div className="category-answers">
                 <Category category='javascript' />

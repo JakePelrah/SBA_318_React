@@ -13,7 +13,7 @@ body {
 }
 
 .display {
-    background-color: rgb(3, 8, 116);
+    background-color: #030874;
     color: rgb(206, 166, 90);
     font-weight: bold;
     height: 6em;
@@ -30,6 +30,7 @@ body {
     font-size: 4em;
     text-shadow: 5px 4px 0px rgba(0, 0, 0, 0.93);
     letter-spacing: .075em;
+    pointer-events: none;
 }
 
 .answer-title::first-letter {
@@ -54,7 +55,7 @@ body {
 .modal-content {
     background-color: #030874 !important;
     font-family: answer;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: aliceblue;
     text-shadow: 5px 4px 0px rgba(0, 0, 0, 0.93);
 }
@@ -70,6 +71,16 @@ body {
 .category-answers:last-child {
     border-radius: 0em 2em 2em 0em;
 }
-.answer{
+
+.answer {
     cursor: pointer;
+}
+
+.scoreboard {
+    width: 15em;
+}
+
+.disabled {
+    background-color: #030874;
+    pointer-events: none;
 }
