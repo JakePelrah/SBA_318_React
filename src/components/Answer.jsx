@@ -16,7 +16,7 @@ export default function Answer() {
         const {amount, category} = e.target.querySelector('[data-amount]').dataset
 
         // show answer modal
-        showAnswerModal('JavaScript', amount, category )
+        showAnswerModal(category, amount )
 
     }
 

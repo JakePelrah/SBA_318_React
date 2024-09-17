@@ -26,34 +26,34 @@
             },
             {
                 "value": 600,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 1 worth $600",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 1 worth $600",
+                    "Answer B for Category 1 worth $600",
+                    "Answer C for Category 1 worth $600",
+                    "Answer D for Category 1 worth $600"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 800,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 1 worth $800",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 1 worth $800",
+                    "Answer B for Category 1 worth $800",
+                    "Answer C for Category 1 worth $800",
+                    "Answer D for Category 1 worth $800"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 1000,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 1 worth $1000",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 1 worth $1000",
+                    "Answer B for Category 1 worth $1000",
+                    "Answer C for Category 1 worth $1000",
+                    "Answer D for Category 1 worth $1000"
                 ],
                 "correctAnswerIndex": 1
             }
@@ -64,56 +64,56 @@
         "clues": [
             {
                 "value": 200,
-                "clue": "Clue for Category 1 worth $200",
+                "clue": "Clue for Category 2 worth $200",
                 "answers": [
-                    "Answer A for Category 1 worth $200",
-                    "Answer B for Category 1 worth $200",
-                    "Answer C for Category 1 worth $200",
-                    "Answer D for Category 1 worth $200"
+                    "Answer A for Category 2 worth $200",
+                    "Answer B for Category 2 worth $200",
+                    "Answer C for Category 2 worth $200",
+                    "Answer D for Category 2 worth $200"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 400,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 2 worth $400",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 2 worth $400",
+                    "Answer B for Category 2 worth $400",
+                    "Answer C for Category 2 worth $400",
+                    "Answer D for Category 2 worth $400"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 600,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 2 worth $600",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 2 worth $600",
+                    "Answer B for Category 2 worth $600",
+                    "Answer C for Category 2 worth $600",
+                    "Answer D for Category 2 worth $600"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 800,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 2 worth $800",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 2 worth $800",
+                    "Answer B for Category 2 worth $800",
+                    "Answer C for Category 2 worth $800",
+                    "Answer D for Category 2 worth $800"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 1000,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 2 worth $1000",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 2 worth $1000",
+                    "Answer B for Category 2 worth $1000",
+                    "Answer C for Category 2 worth $1000",
+                    "Answer D for Category 2 worth $1000"
                 ],
                 "correctAnswerIndex": 1
             }
@@ -124,56 +124,56 @@
         "clues": [
             {
                 "value": 200,
-                "clue": "Clue for Category 1 worth $200",
+                "clue": "Clue for Category 3 worth $200",
                 "answers": [
-                    "Answer A for Category 1 worth $200",
-                    "Answer B for Category 1 worth $200",
-                    "Answer C for Category 1 worth $200",
-                    "Answer D for Category 1 worth $200"
+                    "Answer A for Category 3 worth $200",
+                    "Answer B for Category 3 worth $200",
+                    "Answer C for Category 3 worth $200",
+                    "Answer D for Category 3 worth $200"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 400,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 3 worth $400",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 3 worth $400",
+                    "Answer B for Category 3 worth $400",
+                    "Answer C for Category 3 worth $400",
+                    "Answer D for Category 3 worth $400"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 600,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 3 worth $600",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 3 worth $600",
+                    "Answer B for Category 3 worth $600",
+                    "Answer C for Category 3 worth $600",
+                    "Answer D for Category 3 worth $600"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 800,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 3 worth $800",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 3 worth $800",
+                    "Answer B for Category 3 worth $800",
+                    "Answer C for Category 3 worth $800",
+                    "Answer D for Category 3 worth $800"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 1000,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 3 worth $1000",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 3 worth $1000",
+                    "Answer B for Category 3 worth $1000",
+                    "Answer C for Category 3 worth $1000",
+                    "Answer D for Category 3 worth $1000"
                 ],
                 "correctAnswerIndex": 1
             }
@@ -184,56 +184,56 @@
         "clues": [
             {
                 "value": 200,
-                "clue": "Clue for Category 1 worth $200",
+                "clue": "Clue for Category 4 worth $200",
                 "answers": [
-                    "Answer A for Category 1 worth $200",
-                    "Answer B for Category 1 worth $200",
-                    "Answer C for Category 1 worth $200",
-                    "Answer D for Category 1 worth $200"
+                    "Answer A for Category 4 worth $200",
+                    "Answer B for Category 4 worth $200",
+                    "Answer C for Category 4 worth $200",
+                    "Answer D for Category 4 worth $200"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 400,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 4 worth $400",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 4 worth $400",
+                    "Answer B for Category 4 worth $400",
+                    "Answer C for Category 4 worth $400",
+                    "Answer D for Category 4 worth $400"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 600,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 4 worth $600",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 4 worth $600",
+                    "Answer B for Category 4 worth $600",
+                    "Answer C for Category 4 worth $600",
+                    "Answer D for Category 4 worth $600"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 800,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 4 worth $800",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 4 worth $800",
+                    "Answer B for Category 4 worth $800",
+                    "Answer C for Category 4 worth $800",
+                    "Answer D for Category 4 worth $800"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 1000,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 4 worth $1000",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 4 worth $1000",
+                    "Answer B for Category 4 worth $1000",
+                    "Answer C for Category 4 worth $1000",
+                    "Answer D for Category 4 worth $1000"
                 ],
                 "correctAnswerIndex": 1
             }
@@ -244,56 +244,56 @@
         "clues": [
             {
                 "value": 200,
-                "clue": "Clue for Category 1 worth $200",
+                "clue": "Clue for Category 5 worth $200",
                 "answers": [
-                    "Answer A for Category 1 worth $200",
-                    "Answer B for Category 1 worth $200",
-                    "Answer C for Category 1 worth $200",
-                    "Answer D for Category 1 worth $200"
+                    "Answer A for Category 5 worth $200",
+                    "Answer B for Category 5 worth $200",
+                    "Answer C for Category 5 worth $200",
+                    "Answer D for Category 5 worth $200"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 400,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 5 worth $400",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 5 worth $400",
+                    "Answer B for Category 5 worth $400",
+                    "Answer C for Category 5 worth $400",
+                    "Answer D for Category 5 worth $400"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 600,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 5 worth $600",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 5 worth $600",
+                    "Answer B for Category 5 worth $600",
+                    "Answer C for Category 5 worth $600",
+                    "Answer D for Category 5 worth $600"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 800,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 5 worth $800",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 5 worth $800",
+                    "Answer B for Category 5 worth $800",
+                    "Answer C for Category 5 worth $800",
+                    "Answer D for Category 5 worth $800"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 1000,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 5 worth $1000",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 5 worth $1000",
+                    "Answer B for Category 5 worth $1000",
+                    "Answer C for Category 5 worth $1000",
+                    "Answer D for Category 5 worth $1000"
                 ],
                 "correctAnswerIndex": 1
             }
@@ -304,56 +304,56 @@
         "clues": [
             {
                 "value": 200,
-                "clue": "Clue for Category 1 worth $200",
+                "clue": "Clue for Category 6 worth $200",
                 "answers": [
-                    "Answer A for Category 1 worth $200",
-                    "Answer B for Category 1 worth $200",
-                    "Answer C for Category 1 worth $200",
-                    "Answer D for Category 1 worth $200"
+                    "Answer A for Category 6 worth $200",
+                    "Answer B for Category 6 worth $200",
+                    "Answer C for Category 6 worth $200",
+                    "Answer D for Category 6 worth $200"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 400,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 6 worth $400",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 6 worth $400",
+                    "Answer B for Category 6 worth $400",
+                    "Answer C for Category 6 worth $400",
+                    "Answer D for Category 6 worth $400"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 600,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 6 worth $600",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 6 worth $600",
+                    "Answer B for Category 6 worth $600",
+                    "Answer C for Category 6 worth $600",
+                    "Answer D for Category 6 worth $600"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 800,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 6 worth $800",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 6 worth $800",
+                    "Answer B for Category 6 worth $800",
+                    "Answer C for Category 6 worth $800",
+                    "Answer D for Category 6 worth $800"
                 ],
                 "correctAnswerIndex": 1
             },
             {
                 "value": 1000,
-                "clue": "Clue for Category 1 worth $400",
+                "clue": "Clue for Category 6 worth $1000",
                 "answers": [
-                    "Answer A for Category 1 worth $400",
-                    "Answer B for Category 1 worth $400",
-                    "Answer C for Category 1 worth $400",
-                    "Answer D for Category 1 worth $400"
+                    "Answer A for Category 6 worth $1000",
+                    "Answer B for Category 6 worth $1000",
+                    "Answer C for Category 6 worth $1000",
+                    "Answer D for Category 6 worth $1000"
                 ],
                 "correctAnswerIndex": 1
             }

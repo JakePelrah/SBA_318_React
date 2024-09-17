@@ -6,9 +6,11 @@ export default function AnswerModal() {
 
     function submit(e) {
         const radioButtons = document.getElementsByName('question')
-        const answer = [...radioButtons].filter(btn => btn.checked)[0].value
+        const answer = [...radioButtons].filter(btn => btn.checked)[0]?.value
         const { category, amount } = document.getElementById('answer-modal').dataset
-        submitAnswer(category, amount, answer)
+        
+        if(answer)
+            submitAnswer(category, amount, answer)
     }
 
     return (

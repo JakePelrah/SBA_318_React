@@ -34,18 +34,28 @@ export default function GameProvider({ children }) {
     }, [questionData])
 
     function showAnswerModal(category, amount) {
+
         modal._element.dataset.category = category
         modal._element.dataset.amount = amount
+
+        amount = parseInt(amount)
+
+
+        category = questionData.find((obj) => { return obj.category === category })
+        const {clue} =  category.clues.find((obj) =>{return obj.value === amount})
+
+        modal._element.querySelector('#modal-answer').innerText = clue
+
         modal.show()
     }
 
     function submitAnswer(category, amount, answer) {
-        
+
         answer = parseInt(answer)
         amount = parseInt(amount)
 
         // check correct answer here
-        
+
         if (answer === 0) {
             setScore(score + amount)
         }
