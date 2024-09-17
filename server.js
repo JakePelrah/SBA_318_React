@@ -2,6 +2,7 @@ import express from 'express'
 import { fileURLToPath } from 'node:url'
 import path, { join } from 'node:path';
 import sqlite3 from 'sqlite3';
+import data from "./data.json" with { type: "json" };
 
 const port = 3000
 const app = express()
@@ -16,15 +17,20 @@ app.use(express.json())
 app.use(express.static(join(__dirname, 'dist')));
 
 
-app.get('/questions', (req, res) => {
-    db.all('SELECT * FROM questions', [], (err, rows) => {
-        if (err) {
-            res.json({})
-            throw err;
-        }
-        rows = rows.map(row => ({ ...row, answers: JSON.parse(row.answers) }))
-        res.json(rows)
-    });
+app.get('/game', (req, res) => {
+
+    console.log(data)
+    res.json(data)
+    
+    // console.log('here')
+    // db.all('SELECT * FROM questions', [], (err, rows) => {
+    //     if (err) {
+    //         res.json({})
+    //         throw err;
+    //     }
+    //     rows = rows.map(row => ({ ...row, answers: JSON.parse(row.answers) }))
+    //     res.json(rows)
+    // });
 })
 
 

@@ -22,7 +22,6 @@ body {
     justify-content: center;
     align-items: center;
     border: .25em solid black;
-    border-radius: .25em;
 }
 
 .answer-title {
@@ -39,9 +38,9 @@ body {
     letter-spacing: .15em;
 }
 
-.category {
-    color: rgb(255, 255, 255);
-    margin-bottom: .35em;
+.category-display{
+    color: aliceblue !important;
+    border-bottom: .5em solid black;
 }
 
 .category-title {

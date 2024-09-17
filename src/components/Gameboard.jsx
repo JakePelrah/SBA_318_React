@@ -8,58 +8,58 @@ export default function Gameboard() {
 
         <div className='d-flex justify-content-center mt-3'>
 
-            <div className="category-answers">
+            <div className="category">
                 <Category category='javascript' />
-                <Answer answerValue={200} />
-                <Answer answerValue={400} />
-                <Answer answerValue={-600} />
-                <Answer answerValue={800} />
-                <Answer answerValue={1000} />
+                <Answer />
+                <Answer />
+                <Answer />
+                <Answer />
+                <Answer />
             </div>
 
-            <div className="category-answers">
+            <div className="category">
                 <Category category='css' />
-                <Answer answerValue={200} />
-                <Answer answerValue={400} />
-                <Answer answerValue={600} />
-                <Answer answerValue={800} />
-                <Answer answerValue={1000} />
+                <Answer />
+                <Answer />
+                <Answer />
+                <Answer />
+                <Answer />
             </div>
 
-            <div className="category-answers">
+            <div className="category">
                 <Category category='html' />
-                <Answer answerValue={200} />
-                <Answer answerValue={400} />
-                <Answer answerValue={600} />
-                <Answer answerValue={800} />
-                <Answer answerValue={1000} />
+                <Answer />
+                <Answer />
+                <Answer />
+                <Answer />
+                <Answer />
             </div>
 
-            <div className="category-answers">
+            <div className="category">
                 <Category category='react' />
-                <Answer answerValue={200} />
-                <Answer answerValue={400} />
-                <Answer answerValue={600} />
-                <Answer answerValue={800} />
-                <Answer answerValue={1000} />
+                <Answer />
+                <Answer />
+                <Answer />
+                <Answer />
+                <Answer />
             </div>
 
-            <div className="category-answers">
+            <div className="category">
                 <Category category='express' />
-                <Answer answerValue={200} />
-                <Answer answerValue={400} />
-                <Answer answerValue={600} />
-                <Answer answerValue={800} />
-                <Answer answerValue={1000} />
+                <Answer />
+                <Answer />
+                <Answer />
+                <Answer />
+                <Answer />
             </div>
 
-            <div className="category-answers">
+            <div className="category">
                 <Category category='mongo' />
-                <Answer answerValue={200} />
-                <Answer answerValue={400} />
-                <Answer answerValue={600} />
-                <Answer answerValue={800} />
-                <Answer answerValue={1000} />
+                <Answer />
+                <Answer />
+                <Answer />
+                <Answer />
+                <Answer />
             </div>
 
 

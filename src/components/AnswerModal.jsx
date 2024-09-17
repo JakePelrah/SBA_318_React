@@ -1,17 +1,15 @@
 import { useGameContext } from "./GameProvider"
 
 export default function AnswerModal() {
-    const {submitAnswer } = useGameContext()
+    const { submitAnswer } = useGameContext()
 
 
     function submit(e) {
-        // get check value
         const radioButtons = document.getElementsByName('question')
-        const checkedRadio = [...radioButtons].filter(btn => btn.checked)[0]
-        submitAnswer(checkedRadio)
+        const answer = [...radioButtons].filter(btn => btn.checked)[0].value
+        const { category, amount } = document.getElementById('answer-modal').dataset
+        submitAnswer(category, amount, answer)
     }
-
-
 
     return (
         <div id="answer-modal" class="modal" data-bs-backdrop="static" tabindex="-1">

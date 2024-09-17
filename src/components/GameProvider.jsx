@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect, useRef } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 //131127
 const GameContext = createContext();
@@ -8,25 +8,49 @@ export default function GameProvider({ children }) {
     const [score, setScore] = useState(0)
     const [modal, setModal] = useState(null)
     const [count, setCount] = useState(0)
-    const [answerValue, setAnswerValue] = useState(0)
+    const [questionData, setQuestionData] = useState([])
 
 
     useEffect(() => {
+
+        // get reference to answer modal
         setModal(new bootstrap.Modal('#answer-modal', { keyboard: false }))
+
+        // fetch new game
+        fetch('game')
+            .then(res => res.json())
+            .then(setQuestionData)
     }, [])
 
-    function showAnswerModal() {
+    useEffect(() => {
+        document.querySelectorAll('.category').forEach((category, ci) => {
+            category.querySelectorAll('.answer-title').forEach((answer, ai) => {
+                const amt = questionData[ci]?.clues[ai].value
+                answer.innerHTML = `$${amt}`
+                answer.dataset.amount = amt
+                answer.dataset.category = questionData[ci]?.category
+            })
+        })
+    }, [questionData])
+
+    function showAnswerModal(category, amount) {
+        modal._element.dataset.category = category
+        modal._element.dataset.amount = amount
         modal.show()
     }
 
-    function submitAnswer(answerNum) {
-        answerNum = parseInt(answerNum.value)
-        // correct
-        if (answerNum === 0) {
-            setScore(score + answerValue)
+    function submitAnswer(category, amount, answer) {
+        
+        answer = parseInt(answer)
+        amount = parseInt(amount)
+
+        // check correct answer here
+        
+        if (answer === 0) {
+            setScore(score + amount)
         }
-        else{
-            setScore(score - answerValue)
+        else {
+            setScore(score - amount)
         }
 
         incrementCount()
@@ -47,10 +71,9 @@ export default function GameProvider({ children }) {
     return (
         <GameContext.Provider value={{
             setScore, score, showAnswerModal,
-            modal, incrementCount, setAnswerValue, submitAnswer
+            modal, incrementCount, submitAnswer
         }}>
             {children}
         </GameContext.Provider>
     );
-
 }
