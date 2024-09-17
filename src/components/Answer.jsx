@@ -2,7 +2,7 @@ import { useGameContext } from "./GameProvider"
 
 export default function Answer() {
 
-    const { showAnswerModal } = useGameContext()
+    const { showAnswerModal} = useGameContext()
 
     function answerClicked(e) {
 

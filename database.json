@@ -1,0 +1,1955 @@
+[
+    {
+        "category": "JavaScript",
+        "clues": [
+            {
+                "clue": "Which method should you use if you want to run multiple promises concurrently and wait for all of them to complete?",
+                "answers": [
+                    "Promise.some()",
+                    "Promise.all()",
+                    "Promise.each()",
+                    "Promise.race()"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "What is the primary benefit of Promise.allSettled() over Promise.all()?",
+                "answers": [
+                    "It resolves only the first successful promise.",
+                    "It waits for all promises to settle, regardless of outcome.",
+                    "It rejects if any promise rejects.",
+                    "It executes promises sequentially."
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "What does AJAX stand for?",
+                "answers": [
+                    "Asynchronous JavaScript and XHR.",
+                    "Asynchronous JavaScript and XML.",
+                    "Asynchronous JSON and XML.",
+                    "Asynchronous JSON and XHR."
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which of the following are pillars of object-oriented programming? Select all that apply.",
+                "answers": [
+                    "Instantiation",
+                    "Encapsulation",
+                    "Inheritance",
+                    "Abstraction"
+                ],
+                "correctAnswerIndices": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "clue": "Why is it advisable not to perform heavy computations synchronously in JavaScript?",
+                "answers": [
+                    "It uses more memory.",
+                    "It can block the call stack, making the UI unresponsive.",
+                    "Asynchronous computations are always faster.",
+                    "It can lead to redundancy in code."
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "What is the main characteristic of the JavaScript call stack?",
+                "answers": [
+                    "It allows asynchronous operations.",
+                    "It processes function calls in a last-in, first-out (LIFO) order.",
+                    "It processes function calls in parallel.",
+                    "It prioritizes events over function calls."
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which of the following is a method in the XMLHttpRequest object for sending an HTTP request?",
+                "answers": [
+                    "send()",
+                    "ajax()",
+                    "fetch()",
+                    "post()"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "How can you create a new Promise?",
+                "answers": [
+                    "new Promise()",
+                    "new Promise.resolve()",
+                    "Promise.create()",
+                    "Promise()"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What type of errors can break the event loop?",
+                "answers": [
+                    "Both Syntax and Runtime errors.",
+                    "The event loop cannot be broken by any errors.",
+                    "Syntax errors.",
+                    "Runtime errors."
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What is the role of the 'Microtask Queue' in the event loop?",
+                "answers": [
+                    "Handle events like click or mouse move.",
+                    "Process all asynchronous tasks.",
+                    "Handle promise-related tasks.",
+                    "Process macro-level tasks like network requests."
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "How does the event loop handle asynchronous callback functions?",
+                "answers": [
+                    "It executes them before the main call stack.",
+                    "It holds them in the callback queue until the call stack is empty.",
+                    "It sends them to a different thread for processing.",
+                    "It interrupts the call stack and runs them immediately."
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "The 'new' keyword in JavaScript is used primarily to:",
+                "answers": [
+                    "Generate a new promise.",
+                    "Declare a new variable.",
+                    "Instantiate a new function.",
+                    "Create a new instance of a class."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What is a potential downside of a very long-running function in JavaScript's single-threaded environment?",
+                "answers": [
+                    "The event loop gets cleared.",
+                    "It causes other tasks to speed up unpredictably.",
+                    "The browser becomes unresponsive until the function execution completes.",
+                    "Other functions in the callback queue are executed in parallel."
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "What is the purpose of 'default' in ES6 module exports?",
+                "answers": [
+                    "To import all functions and variables by default.",
+                    "To set a backup export.",
+                    "To specify the primary export of a module.",
+                    "To set an alias for a variable or function."
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "In the context of the event loop, what is a 'microtask'?",
+                "answers": [
+                    "The smallest unit of code that the JS engine can execute.",
+                    "Another name for a callback function.",
+                    "A task that takes less than 1ms to execute.",
+                    "Tasks processed after the current task and before rendering."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "How does JavaScript handle concurrent tasks?",
+                "answers": [
+                    "Divides the call stack into multiple sections.",
+                    "Uses parallel processing.",
+                    "Uses an event-driven non-blocking I/O.",
+                    "Creates multi-threaded operations."
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "What is the primary way to handle the response from an Axios request?",
+                "answers": [
+                    "Observables",
+                    "Callbacks",
+                    "Event Listeners",
+                    "Promises"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What is the equivalent of the fetch method's response.json() in Axios?",
+                "answers": [
+                    "axios.json(response)",
+                    "response.data",
+                    "response.toJSON()",
+                    "response.json()"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which keyword is used to export a module in ES6 JavaScript?",
+                "answers": [
+                    "module",
+                    "require",
+                    "export",
+                    "include"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "In ES6 module syntax, which of the following would you use to rename an imported variable?",
+                "answers": [
+                    "import { originalName: newName } from 'module-name';",
+                    "import { originalName as newName } from 'module-name';",
+                    "import newName { originalName } from 'module-name';",
+                    "import originalName as newName from 'module-name';"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "How can you create a private variable in a JavaScript class?",
+                "answers": [
+                    "Declare the variable using the private keyword.",
+                    "Declare the variable inside a method.",
+                    "Prefix the variable name with #.",
+                    "Prefix the variable name with _."
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "In a fetch request, how can you catch an HTTP error status (like 404 or 500)?",
+                "answers": [
+                    "Check response.ok in a .then() callback.",
+                    "Use the .status() method on the response.",
+                    "Handle it in the .catch() method.",
+                    "Fetch automatically throws errors for non-200 status codes."
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which of the following best describes encapsulation?",
+                "answers": [
+                    "Bundling of data and methods that operate on data within a single unit.",
+                    "Deriving one class from another.",
+                    "Including all properties inside an object.",
+                    "Splitting code into multiple functions."
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which method on a Promise is used to handle rejections?",
+                "answers": [
+                    "error()",
+                    "catch()",
+                    "reject()",
+                    "handle()"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "How can you set custom headers for an Axios request?",
+                "answers": [
+                    "By adding headers as the third argument to axios.get().",
+                    "By using the headers property in the config object.",
+                    "By using the customHeaders property.",
+                    "By using the setHeader method."
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "What is a 'Promise' in JavaScript?",
+                "answers": [
+                    "A callback that is executed after an interval.",
+                    "A function that will always execute without errors.",
+                    "A guaranteed returned value from a function.",
+                    "A data type that represents a value, which may not be available yet."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "If you wanted to perform a side effect in a module (e.g., logging or initiating a data fetch) without importing any values, which syntax would you use?",
+                "answers": [
+                    "import 'module-name';",
+                    "import . from 'module-name';",
+                    "import void from 'module-name';",
+                    "import {} from 'module-name';"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "How do you define a getter method inside a JavaScript class?",
+                "answers": [
+                    "this.get(propertyName)",
+                    "function get propertyName() { ... }",
+                    "get: function(propertyName) { ... }",
+                    "get propertyName() { ... }"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which of the following tasks would be handled by the Web API?",
+                "answers": [
+                    "String manipulations",
+                    "Parsing JSON data",
+                    "XMLHttpRequest",
+                    "Mathematical computations"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which keyword ensures that a JavaScript module's internal variables/functions cannot be modified from outside the module?",
+                "answers": [
+                    "immutable",
+                    "private or protected both serve as valid options",
+                    "private",
+                    "None, as modules inherently provide this encapsulation"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "If a JavaScript module has a default export, how would you import it?",
+                "answers": [
+                    "import { defaultExport } from 'module-name';",
+                    "import .defaultExport from 'module-name';",
+                    "import * as defaultExport from 'module-name';",
+                    "import defaultExport from 'module-name';"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "If you see the import ... from ... syntax in a JavaScript file, what type of module system is it most likely using?",
+                "answers": [
+                    "ES6 Modules",
+                    "UMD",
+                    "AMD",
+                    "CommonJS"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "If a module exports multiple items, and one as default, how would you import the default export and a named export simultaneously?",
+                "answers": [
+                    "import defaultExport, { namedExport } from 'module-name';",
+                    "import defaultExport and namedExport from 'module-name';",
+                    "import { defaultExport, namedExport } from 'module-name';",
+                    "import { default as defaultExport, namedExport } from 'module-name';"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What is the purpose of “default” in ES6 module exports?",
+                "answers": [
+                    "To set an alias for a variable or function",
+                    "To import all functions and variables by default.",
+                    "To specify the primary export of a module",
+                    "To set a backup export."
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which keyword ensures that a JavaScript module's internal variables/functions cannot be modified from outside the module?",
+                "answers": [
+                    "private or protected both serve as valid options",
+                    "immutable",
+                    "None, as modules inherently provide this encapsulation",
+                    "private",
+                    "protected"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "In ES6 module syntax, how would you import only specific functions or variables from a module?",
+                "answers": [
+                    "import [functionName] from 'module-name';",
+                    "import functionName from 'module-name';",
+                    "import { functionName } from 'module-name';",
+                    "import .functionName from 'module-name';"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which keyword is used to export a module in ES6 JavaScript?",
+                "answers": [
+                    "module",
+                    "require",
+                    "export",
+                    "include"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which of the following is a way to import everything from a module in ES6?",
+                "answers": [
+                    "import * as aliasName from 'module-name';",
+                    "import all from 'module-name';",
+                    "import 'module-name' as all;",
+                    "import { * } from 'module-name';"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which of the following is a method in the XMLHttpRequest object for sending an HTTP request?",
+                "answers": [
+                    "post()",
+                    "ajax()",
+                    "fetch()",
+                    "send()"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which of these is not a response method in Axios?",
+                "answers": [
+                    "axios.post()",
+                    "axios.data()",
+                    "axios.put()",
+                    "axios.get()"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "How can you set custom headers for an Axios request?",
+                "answers": [
+                    "By adding headers as the third argument to axios.get().",
+                    "By using the customHeaders property.",
+                    "By using the setHeader method.",
+                    "By using the headers property in the config object."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What is the primary way to handle the response from an Axios request?",
+                "answers": [
+                    "Observables",
+                    "Callbacks",
+                    "Event Listeners",
+                    "Promises"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "If you want to make a POST request using the fetch API, what property would you need to set in the options object?",
+                "answers": [
+                    "method",
+                    "post",
+                    "httpVerb",
+                    "type"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which method allows you to catch an error when using the fetch API?",
+                "answers": [
+                    "catch()",
+                    "handleError()",
+                    "error()",
+                    "onError()"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which of the following are methods on the Response object provided by the fetch API? Select all that apply.",
+                "answers": [
+                    "json()",
+                    "html()",
+                    "text()",
+                    "send()"
+                ],
+                "correctAnswerIndex": [
+                    0,
+                    2
+                ]
+            },
+            {
+                "clue": "Which status code typically indicates a successful HTTP GET request?",
+                "answers": [
+                    "500",
+                    "201",
+                    "200",
+                    "404"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "In Axios, how can you globally configure the default settings for requests?",
+                "answers": [
+                    "axios.defaultSettings",
+                    "axios.defaults.global",
+                    "axios.defaults",
+                    "axios.config"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "What does AJAX stand for?",
+                "answers": [
+                    "Asynchronous JavaScript and XML.",
+                    "Asynchronous JSON and XML.",
+                    "Asynchronous JavaScript and XHR.",
+                    "Asynchronous JSON and XHR."
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What does the readyState property of the XMLHttpRequest object indicate?",
+                "answers": [
+                    "The status code of the response (e.g., 200, 404).",
+                    "The method used for the request (e.g., GET, POST).",
+                    "The state of the request (e.g., unsent, opened, done).",
+                    "The content type of the response."
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "What can be used to intercept and modify requests or responses globally in Axios?",
+                "answers": [
+                    "Middlewares",
+                    "Interceptors",
+                    "Hooks",
+                    "Observers"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "What is a common use for the fetch API in modern JavaScript?",
+                "answers": [
+                    "Transpiling ES6 to ES5",
+                    "Manipulating the DOM",
+                    "Making AJAX requests",
+                    "Animating page elements"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "How can you create a new Promise?",
+                "answers": [
+                    "new Promise()",
+                    "new Promise.resolve()",
+                    "Promise.create()",
+                    "Promise()"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which method should you use if you want to run multiple promises concurrently and wait for all of them to complete?",
+                "answers": [
+                    "Promise.some()",
+                    "Promise.race()",
+                    "Promise.all()",
+                    "Promise.each()"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which of the following functions in JavaScript is used to execute something after a delay?",
+                "answers": [
+                    "delay()",
+                    "setInterval()",
+                    "setTimeout()",
+                    "wait()"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which method on a Promise is used to handle rejections?",
+                "answers": [
+                    "reject()",
+                    "handle()",
+                    "error()",
+                    "catch()"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What is a 'Promise' in JavaScript?",
+                "answers": [
+                    "A data type that represents a value, which may not be available yet.",
+                    "A guaranteed returned value from a function.",
+                    "A function that will always execute without errors.",
+                    "A callback that is executed after an interval."
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which of the following are states of a Promise? Select all that apply.",
+                "answers": [
+                    "rejected",
+                    "waiting",
+                    "pending",
+                    "fulfilled"
+                ],
+                "correctAnswerIndex": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            {
+                "clue": "If an async function does not have an explicit return statement, what will it return?",
+                "answers": [
+                    "A rejected Promise.",
+                    "undefined.",
+                    "An empty Promise.",
+                    "A Promise that resolves to undefined."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which method is used to handle the successful resolution of a Promise?",
+                "answers": [
+                    "success()",
+                    "catch()",
+                    "resolve()",
+                    "then()"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What does the async keyword do in front of a function declaration in JavaScript? Select all that apply.",
+                "answers": [
+                    "It causes the function to run immediately without being called.",
+                    "It automatically returns a Promise from the function.",
+                    "It makes the function run asynchronously.",
+                    "It allows the use of the await keyword inside the function."
+                ],
+                "correctAnswerIndex": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "clue": "Which of the following is true about the finally() method on a Promise?",
+                "answers": [
+                    "It runs only if another .then() method follows it.",
+                    "It runs only if the Promise is fulfilled.",
+                    "It runs only if the Promise is rejected.",
+                    "It runs regardless of whether the Promise is rejected or fulfilled."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "In which part of a Promise constructor function do you typically see the resolve and reject functions?",
+                "answers": [
+                    "As properties on the 'this' object",
+                    "As arguments to the .then() method.",
+                    "Outside the constructor function.",
+                    "As arguments to the constructor function."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which of the following is the correct way to use the await keyword in JavaScript?",
+                "answers": [
+                    "Inside an async function",
+                    "Inside a regular function.",
+                    "Inside a callback function.",
+                    "Outside of any function."
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "How can you create a new Promise?",
+                "answers": [
+                    "new Promise.resolve()",
+                    "new Promise()",
+                    "Promise.create()",
+                    "Promise()"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "What is a constructor function in JavaScript?",
+                "answers": [
+                    "The primary function inside a class.",
+                    "A function that returns a new object.",
+                    "A function that constructs arrays.",
+                    "A function that can be called to create an instance of an object."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which keyword in JavaScript is used to create an object prototype?",
+                "answers": [
+                    "proto",
+                    "prototype",
+                    "extends",
+                    "inherits"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "In ES6 and later, which keyword is used to declare a class?",
+                "answers": [
+                    "class",
+                    "prototype",
+                    "constructor",
+                    "object"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which pattern in JavaScript involves creating a single shared instance of a class to be used throughout an application?",
+                "answers": [
+                    "Observer",
+                    "Command",
+                    "Factory",
+                    "Singleton"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which term describes the ability of different classes to be treated as instances of the same class through inheritance?",
+                "answers": [
+                    "Polymorphism",
+                    "Abstraction",
+                    "Encapsulation",
+                    "Modularity"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which feature of OOP ensures that the internal representation of an object is hidden from the outside?",
+                "answers": [
+                    "Encapsulation",
+                    "Inheritance",
+                    "Abstraction",
+                    "Polymorphism"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "How do you define a getter method inside a JavaScript class?",
+                "answers": [
+                    "get propertyName() { ... }",
+                    "this.get(propertyName)",
+                    "function get propertyName() { ... }",
+                    "get: function(propertyName) { ... }"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which of the following are pillars of object-oriented programming? Select all that apply.",
+                "answers": [
+                    "Inheritance",
+                    "Abstraction",
+                    "Instantiation",
+                    "Encapsulation"
+                ],
+                "correctAnswerIndex": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            {
+                "clue": "How can you create a new instance of an object in JavaScript?",
+                "answers": [
+                    "new instanceName()",
+                    "instanceName.new()",
+                    "Object.create(instanceName)",
+                    "instanceName.instance()"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which of the following best describes encapsulation?",
+                "answers": [
+                    "Bundling of data and methods that operate on data within a single unit.",
+                    "Splitting code into multiple functions.",
+                    "Deriving one class from another.",
+                    "Including all properties inside an object."
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which of the following is the primary mechanism for code reuse in object-oriented JavaScript?",
+                "answers": [
+                    "Spreading",
+                    "Inheritance",
+                    "Encapsulation",
+                    "Slicing"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "How do you call the constructor of a parent class from within a child class in ES6?",
+                "answers": [
+                    "super.constructor()",
+                    "parent.constructor()",
+                    "parent()",
+                    "super()"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "In JavaScript ES6, how can a class inherit from another class?",
+                "answers": [
+                    "class Child extends Parent {}",
+                    "class Child: Parent {}",
+                    "class Child -> Parent {}",
+                    "class Child inherits Parent {}"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What does the call stack do when it encounters an asynchronous function like setTimeout?",
+                "answers": [
+                    "Pushes the function to the Web API and continues executing subsequent synchronous tasks.",
+                    "Puts the function in the Callback Queue.",
+                    "Pauses its operations until the specified delay is over.",
+                    "Waits until the timer completes to execute the next function."
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What type of errors can break the event loop?",
+                "answers": [
+                    "Runtime errors.",
+                    "Both Syntax and Runtime errors.",
+                    "Syntax errors.",
+                    "The event loop cannot be broken by any errors."
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What happens when there is a stack overflow in JavaScript?",
+                "answers": [
+                    "All functions on the stack are immediately executed.",
+                    "The event loop freezes.",
+                    "JavaScript automatically clears the stack.",
+                    "A RangeError is thrown."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "How does the Event Loop decide what to execute next?",
+                "answers": [
+                    "Prioritizes new tasks in the Callback Queue.",
+                    "Checks the Call Stack, and if it is empty, takes tasks from the Callback Queue.",
+                    "Waits for the Web API to signal a new task.",
+                    "Executes tasks in the order they are received."
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which of the following execute in the Web API environment? Select all that apply.",
+                "answers": [
+                    "AJAX calls",
+                    "DOM events",
+                    "Array Map method",
+                    "setTimeout"
+                ],
+                "correctAnswerIndex": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            {
+                "clue": "What is the maximum call stack size in JavaScript?",
+                "answers": [
+                    "It is the same across all browsers.",
+                    "It is unlimited as long as there is no recursion.",
+                    "It is determined by the available system memory.",
+                    "65,535"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "What is a potential downside of a very long-running function in JavaScript's single-threaded environment?",
+                "answers": [
+                    "Other functions in the callback queue are executed in parallel.",
+                    "The browser becomes unresponsive until the function execution completes.",
+                    "It causes other tasks to speed up unpredictably.",
+                    "The event loop gets cleared."
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "What component of the JavaScript runtime environment is responsible for task management and scheduling?",
+                "answers": [
+                    "Web API",
+                    "Callback Queue",
+                    "Call Stack",
+                    "Event Loop"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Why is it advisable not to perform heavy computations synchronously in JavaScript?",
+                "answers": [
+                    "Asynchronous computations are always faster.",
+                    "It can lead to redundancy in code.",
+                    "It can block the call stack, making the UI unresponsive.",
+                    "It uses more memory."
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which of the following best describes the \"event loop\" in JavaScript?",
+                "answers": [
+                    "A loop created by setInterval.",
+                    "A function that listens to events in the DOM.",
+                    "A loop that occurs when two functions call each other.",
+                    "A loop in the JS runtime that checks the Call Stack and Callback Queue."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What is the primary role of the JavaScript call stack?",
+                "answers": [
+                    "To store the context of function calls.",
+                    "To handle asynchronous operations.",
+                    "To manage the list of all declared variables.",
+                    "To schedule callbacks."
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What will be the output of console.log(1 + 2 === 3) in JavaScript?",
+                "answers": [
+                    "true",
+                    "undefined",
+                    "NaN",
+                    "false"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which of the following is a way to declare a constant in JavaScript?",
+                "answers": [
+                    "final CONSTANT_NAME;",
+                    "let CONSTANT_NAME;",
+                    "var CONSTANT_NAME;",
+                    "const CONSTANT_NAME;"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "How can you get the type of a JavaScript variable?",
+                "answers": [
+                    "getType(variable)",
+                    "variable instanceof type",
+                    "variable.type()",
+                    "typeof variable"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What will be the output of 'typeof null' in JavaScript?",
+                "answers": [
+                    "'null'",
+                    "'NaN'",
+                    "'undefined'",
+                    "'object'"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which of the following is the correct way to check if variable 'a' is both greater than 'b' and less than 'c' in JavaScript?",
+                "answers": [
+                    "a > b & a < c",
+                    "(a > b) and (a < c)",
+                    "a > b and a < c",
+                    "a > b && a < c"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which of the following are primitive data types in JavaScript? Select all that apply.",
+                "answers": [
+                    "Number",
+                    "Boolean",
+                    "Array",
+                    "String"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What is the best practice for declaring a variable in JavaScript?",
+                "answers": [
+                    "con variableName;",
+                    "variable = variableName;",
+                    "let variableName;",
+                    "var variableName;"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which of the following are valid ways to add a comment in JavaScript? Select all that apply.",
+                "answers": [
+                    "// This is a comment",
+                    "~ This is a comment ~",
+                    "/*This is a comment*/",
+                    "<!-- This is a comment -->"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What will the expression '10' + 5 return?",
+                "answers": [
+                    "15",
+                    "TypeError",
+                    "\"15\"",
+                    "\"105\""
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which of the following is the correct operator for exponentiation (raising a number to a power) in JavaScript?",
+                "answers": [
+                    "exp()",
+                    "^",
+                    "pow()",
+                    "**"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "How do you check if two values are both equal in value and in type in JavaScript?",
+                "answers": [
+                    "x = y",
+                    "x.equals(y)",
+                    "x == y",
+                    "x === y"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What will the following code output? if (false) { console.log('True'); } else { console.log('False'); }",
+                "answers": [
+                    "False",
+                    "Error",
+                    "True",
+                    "Undefined"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which of the following is used to handle exceptions in JavaScript?",
+                "answers": [
+                    "try/error",
+                    "try/catch",
+                    "exception/handle",
+                    "error/handle"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "In a switch statement, what keyword is used as a default condition if none of the cases match?",
+                "answers": [
+                    "catch",
+                    "else",
+                    "default",
+                    "other"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "How can you explicitly throw an exception in JavaScript?",
+                "answers": [
+                    "exit('Error message')",
+                    "throw new Error('Error message')",
+                    "raise('Error message')",
+                    "alert('Error message')"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which of the following is used to test multiple expressions/values?",
+                "answers": [
+                    "Execute statement",
+                    "Loop statement",
+                    "If statement",
+                    "Switch statement"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What is the result of the following code? let x = 10; let output = (x > 10) ? \"Greater\" : \"Not greater\"; console.log(output);",
+                "answers": [
+                    "Greater",
+                    "Error",
+                    "10",
+                    "Not greater"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What does the “finally” block in a try/catch/finally structure ensure?",
+                "answers": [
+                    "The code inside it executes whether or not an error occurred in the try block.",
+                    "The code inside it never executes.",
+                    "The code inside it executes after the try block only if there's an error.",
+                    "The code inside it overrides any caught exceptions."
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "How can you check if variable \"x\" is NOT equal to a value \"y\" in both value and type?",
+                "answers": [
+                    "x <> y",
+                    "x !== y",
+                    "x != y",
+                    "x ~= y"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "What will be the output of the following JavaScript code snippet? let sum = 0; for (let i = 0; i < 5; i++) { if (i % 2 === 0) continue; sum += i; } console.log(sum);",
+                "answers": [
+                    "6",
+                    "5",
+                    "3",
+                    "4"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which statement will execute a block of code at least once, and then repeat it while a condition is true?",
+                "answers": [
+                    "loop { } if (condition)",
+                    "repeat { } until (condition)",
+                    "do { } while (condition)",
+                    "while (condition) { } do { }"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which of the following statements is correct regarding the “continue” keyword in JavaScript?",
+                "answers": [
+                    "It continues to execute the loop from the start.",
+                    "It exits the loop entirely.",
+                    "It breaks out of the current function.",
+                    "It skips the rest of the loop's current iteration."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "How do you repeat a block of code as long as a specific condition is true?",
+                "answers": [
+                    "repeat on condition { }",
+                    "while (condition) { }",
+                    "do while (condition) { }",
+                    "continue if condition { }"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "What is the purpose of the “break” statement in JavaScript?",
+                "answers": [
+                    "To break the script execution completely.",
+                    "To exit the current loop or switch statement.",
+                    "To skip to the next iteration of a loop.",
+                    "To exit the current function."
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which of the following loops will run a block of code a specified number of times in JavaScript?",
+                "answers": [
+                    "do...while",
+                    "for",
+                    "while",
+                    "repeat"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which of the following can be used to indefinitely repeat a block of code in JavaScript?",
+                "answers": [
+                    "loop {}",
+                    "for (0; 0; 0) { }",
+                    "for (;;) { }",
+                    "repeat {}"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "What will the following code snippet print? let i = 0; while (i < 3) { console.log(i); i++; }",
+                "answers": [
+                    "1, 2, 3",
+                    "0, 1",
+                    "0, 1, 2",
+                    "1, 2"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "How would you iterate over all properties of an object obj in JavaScript?",
+                "answers": [
+                    "for (let prop of obj) { }",
+                    "obj.map(prop => { })",
+                    "obj.forEach(prop => { })",
+                    "for (let prop in obj) { }"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What will be the output of the following code snippet? let data = { a: 10, b: 20, c: 30 }; console.log(Object.keys(data).length);",
+                "answers": [
+                    "Undefined",
+                    "1",
+                    "0",
+                    "3"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What is a JavaScript method to remove an item from the end of an array?",
+                "answers": [
+                    ".delete()",
+                    ".removeLast()",
+                    ".shift()",
+                    ".pop()"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which of the following will correctly create an array with three strings in JavaScript?",
+                "answers": [
+                    "let arr = {\"one\", \"two\", \"three\"};",
+                    "let arr = (1: \"one\", 2: \"two\", 3: \"three\");",
+                    "let arr = [\"one\", \"two\", \"three\"];",
+                    "let arr = array(\"one\", \"two\", \"three\");"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which of the following methods can be used to iterate over an array in JavaScript?",
+                "answers": [
+                    ".loop()",
+                    ".iterate()",
+                    ".forEach()",
+                    ".repeat()"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "In an array arr, how can you find the index of the first occurrence of the value \"banana\"?",
+                "answers": [
+                    "arr.index(\"banana\")",
+                    "arr.position(\"banana\")",
+                    "arr.indexOf(\"banana\")",
+                    "arr.find(\"banana\")"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "How can you add a new item \"grape\" to the end of an existing array fruits?",
+                "answers": [
+                    "fruits.insert(\"grape\");",
+                    "fruits.add(\"grape\");",
+                    "fruits.append(\"grape\");",
+                    "fruits.push(\"grape\");"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which is a way to create an object in JavaScript?",
+                "answers": [
+                    "let obj = new {}",
+                    "let obj = () => {}",
+                    "let obj = {}",
+                    "let obj = []"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which of the following are valid ways to access the value \"apple\" from the following object? Select all that apply. let obj = { fruit: \"apple\", vegetable: \"carrot\" };",
+                "answers": [
+                    "obj.fruit",
+                    "obj.getFruit()",
+                    "obj[0]",
+                    "obj['fruit']"
+                ],
+                "correctAnswerIndex": [
+                    0,
+                    3
+                ]
+            },
+            {
+                "clue": "What will be the output of console.log(1 + 2 === 3) in JavaScript?",
+                "answers": [
+                    "true",
+                    "undefined",
+                    "NaN",
+                    "false"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What is the purpose of the `break` statement in JavaScript?",
+                "answers": [
+                    "To exit the current function.",
+                    "To skip to the next iteration of a loop.",
+                    "To break the script execution completely.",
+                    "To exit the current loop or switch statement."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which of the following are valid ways to add a comment in JavaScript? Select all that apply.",
+                "answers": [
+                    "// This is a comment",
+                    "~ This is a comment ~",
+                    "/*This is a comment*/",
+                    "<!-- This is a comment -->"
+                ],
+                "correctAnswerIndex": [
+                    0,
+                    2
+                ]
+            },
+            {
+                "clue": "How do you repeat a block of code as long as a specific condition is true?",
+                "answers": [
+                    "do while (condition) { }",
+                    "while (condition) { }",
+                    "continue if condition { }",
+                    "repeat on condition { }"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which of the following is used to handle exceptions in JavaScript?",
+                "answers": [
+                    "try/error",
+                    "try/catch",
+                    "exception/handle",
+                    "error/handle"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which of the following will correctly create an array with three strings in JavaScript?",
+                "answers": [
+                    "let arr = {\"one\", \"two\", \"three\"};",
+                    "let arr = (1: \"one\", 2: \"two\", 3: \"three\");",
+                    "let arr = [\"one\", \"two\", \"three\"];",
+                    "let arr = array(\"one\", \"two\", \"three\");"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Given an array arr, which of the following will remove the last two elements and return them?",
+                "answers": [
+                    "arr.pop(2);",
+                    "arr.shift(2);",
+                    "arr.slice(-2);",
+                    "arr.splice(-2, 2);"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which of the following loops will run a block of code a specified number of times in JavaScript?",
+                "answers": [
+                    "do...while",
+                    "for",
+                    "while",
+                    "repeat"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "In a switch statement, what keyword is used as a default condition if none of the cases match?",
+                "answers": [
+                    "catch",
+                    "else",
+                    "default",
+                    "other"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which of the following will produce a runtime error in JavaScript?",
+                "answers": [
+                    "var z = 10; delete z;",
+                    "const x = 10; x = 20;",
+                    "let a = '10' * '2';",
+                    "let y; console.log(y);"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "How do you produce a value from a function in JavaScript?",
+                "answers": [
+                    "output value;",
+                    "return value;",
+                    "yield value;",
+                    "export value;"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "In which type of scope can a variable declared with the var keyword be accessed from?",
+                "answers": [
+                    "Only within the file it was declared in.",
+                    "Block scope.",
+                    "Only in the loop it was declared in.",
+                    "Global scope and function scope."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What will be the output of the following code snippet? let data = { a: 10, b: 20, c: 30 }; console.log(Object.keys(data).length);",
+                "answers": [
+                    "Undefined",
+                    "1",
+                    "0",
+                    "3"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What will be the output of the following JavaScript code snippet? let sum = 0; for (let i = 0; i < 5; i++) { if (i % 2 === 0) continue; sum += i; } console.log(sum);",
+                "answers": [
+                    "Greater",
+                    "Error",
+                    "10",
+                    "Not greater"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which keyword is used to declare a function in JavaScript?",
+                "answers": [
+                    "function",
+                    "declare",
+                    "func",
+                    "def"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What is the primary purpose of arrow functions in ES6?",
+                "answers": [
+                    "To introduce a new way of creating functions without using the keyword.",
+                    "To change how asynchronous code is handled.",
+                    "To make functions shorter and simpler.",
+                    "To replace the traditional function syntax entirely."
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which keyword creates a variable that is block-scoped, which means that it exists only within the current block?",
+                "answers": [
+                    "let",
+                    "static",
+                    "block",
+                    "var"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What would be the output of the following code? let data = 'global'; function demo() { console.log(data); let data = 'local'; } demo();",
+                "answers": [
+                    "Error",
+                    "undefined",
+                    "global",
+                    "local"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which of the following is the correct way to check if variable “a” is both greater than “b” and less than “c” in JavaScript?",
+                "answers": [
+                    "a > b and a < c",
+                    "a > b && a < c",
+                    "(a > b) and (a < c)",
+                    "a > b & a < c"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "What is the term for a function that takes another function as an argument?",
+                "answers": [
+                    "Anonymous function.",
+                    "Generator function.",
+                    "Callback function.",
+                    "Nested function."
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "What is the result of the following code? let x = 10; let output = (x > 10) ? \"Greater\" : \"Not greater\"; console.log(output);",
+                "answers": [
+                    "Greater",
+                    "10",
+                    "Not greater",
+                    "Error"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which of the following methods can be used to iterate over an array in JavaScript?",
+                "answers": [
+                    ".repeat()",
+                    ".forEach()",
+                    ".iterate()",
+                    ".loop()"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which of the following is the correct operator for exponentiation (raising a number to a power) in JavaScript?",
+                "answers": [
+                    "pow()",
+                    "^",
+                    "exp()",
+                    "**"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Given the following code, what is the value of result? let x = '5'; let y = 3; let result = x * y;",
+                "answers": [
+                    "15",
+                    "'53'",
+                    "NaN",
+                    "'15'"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which statement will execute a block of code at least once, and then repeat it while a condition is true?",
+                "answers": [
+                    "repeat { } until (condition)",
+                    "do { } while (condition)",
+                    "while (condition) { } do { }",
+                    "loop { } if (condition)"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "What will the expression “10\" + 5 return?",
+                "answers": [
+                    "TypeError",
+                    "15",
+                    "\"105\"",
+                    "NaN"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "How can you explicitly throw an exception in JavaScript?",
+                "answers": [
+                    "raise('Error message')",
+                    "exit('Error message')",
+                    "throw new Error('Error message')",
+                    "alert('Error message')"
+                ],
+                "correctAnswerIndex": 2
+            }
+        ]
+    },
+    {
+        "category": "HTML",
+        "clues": [
+            {
+                "clue": "Which of the following elements is used to create a drop-down list?",
+                "answers": [
+                    "<input type=\"combobox\"/>",
+                    "<dropdown>",
+                    "<select>",
+                    "<input type=\"dropdown\"/>"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "What does the src attribute on a <img> tag do?",
+                "answers": [
+                    "Specifies the title of the image",
+                    "Open the image in a new browser window if clicked",
+                    "Specifies the text to show if the image is unable to be loaded",
+                    "Specifies the location of the image to load"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "When using HTML forms, which type of input type allows for just a single selection (e.g., yes/no; true/false)?",
+                "answers": [
+                    "submit",
+                    "radio",
+                    "checkbox",
+                    "button"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which of the following is an “element selector”?",
+                "answers": [
+                    "h1 { font-weight: bold; }",
+                    ".productinfo { font-size: 4rem; }",
+                    "p::first-letter { font-size: 2em; }",
+                    "a:visited { color: yellow; }",
+                    "#userinfo { font-style: italic; }"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "The <p> tag represents:",
+                "answers": [
+                    "A page element",
+                    "A processing element",
+                    "A peripheral element",
+                    "A paragraph element"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What is the default character set used for HTML 5?",
+                "answers": [
+                    "utf-32",
+                    "ascii",
+                    "utf-8",
+                    "utf-16"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which tag contains the visible content of an HTML document?",
+                "answers": [
+                    "<head>",
+                    "<body>",
+                    "<visible>",
+                    "<document>"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which of the following attributes must have a unique value?",
+                "answers": [
+                    "class",
+                    "name",
+                    "id",
+                    "length"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "In HTML, attributes usually come in name/value pairs like: name=\"value\". True or False?",
+                "answers": [
+                    "True",
+                    "False"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "When using HTML forms, which of the following allow the user to select none, one, several, or all of the boxes from the options offered?",
+                "answers": [
+                    "button",
+                    "radio button",
+                    "submit",
+                    "checkbox"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "What is one use of the <link> element?",
+                "answers": [
+                    "The <link> element links javascript libraries.",
+                    "The <link> element creates a hyperlink.",
+                    "The <link> element defines document metadata.",
+                    "The <link> element is used to load style sheets."
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "The anchor tag (<a>) is used to:",
+                "answers": [
+                    "Render a hyperlink that lets users navigate to other locations on the same or different pages.",
+                    "Create a fixed point on the page around which other elements are positioned.",
+                    "Anchor elements within a region of the page and keep them together.",
+                    "Draw an image of a boat anchor."
+                ],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category": "CSS",
+        "clues": [
+            {
+                "clue": "In CSS, what type of positioning will render elements dependently on other elements or borders?",
+                "answers": [
+                    "z-index",
+                    "relative",
+                    "none of the mentioned",
+                    "fixed"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which notation will apply the same rules to both paragraph and section elements?",
+                "answers": [
+                    "section, p",
+                    "section ~ p",
+                    "section p",
+                    "section + p"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which of the following will not allow me to specify colors in CSS?",
+                "answers": [
+                    "RGB",
+                    "Hexadecimal (#28AB1A)",
+                    "Octal",
+                    "None of the mentioned"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "In CSS, which style sheet rules have the lowest precedence?",
+                "answers": [
+                    "Inline with an HTML element",
+                    "Internal within the HTML file",
+                    "External CSS file",
+                    "none of the mentioned"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "What CSS properties can we use to modify font settings? (Select all that apply)",
+                "answers": [
+                    "font-size",
+                    "font-weight",
+                    "font-alignment",
+                    "font-family"
+                ],
+                "correctAnswerIndex": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            {
+                "clue": "To preserve the exact formatting of a section of text including spacing and line breaks, the tag must be used.",
+                "answers": [
+                    "link",
+                    "pre",
+                    "embed",
+                    "style"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which CSS property and value enable flexbox positioning?",
+                "answers": [
+                    "display: flexbox;",
+                    "padding: flex;",
+                    "display: flex;",
+                    "flex: on;"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "In CSS, which prefix refers to the id of an element?",
+                "answers": [
+                    "# <-- hash/pound",
+                    "$ <-- dollar sign",
+                    "none of the mentioned",
+                    ". <-- period/dot"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "What pair of annotations allow us to comment in CSS?",
+                "answers": [
+                    "-- '.",
+                    "/* ... */",
+                    "# ... #"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "What CSS position value renders an element in a specific location relative to its nearest positioned ancestor (or the document body, if it has none)?",
+                "answers": [
+                    "relative",
+                    "none of the mentioned",
+                    "z-index",
+                    "absolute"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "In CSS, which prefix refers to the class of an element?",
+                "answers": [
+                    "# <-- hash/pound",
+                    "$ <-- dollar sign",
+                    "none of the mentioned",
+                    ". <-- period/dot"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "In CSS, which style sheet rules have the highest precedence?",
+                "answers": [
+                    "Internal within the HTML file",
+                    "External CSS file",
+                    "Inline with an HTML element",
+                    "none of the mentioned"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "What does the following CSS do? button { background-color:blue; } button:hover { background-color:green; }",
+                "answers": [
+                    "When the user moves the mouse over the button it will change the background to green",
+                    "The background color will be green until the user mouse's over the button",
+                    "The button will only turn green when the user clicks on it",
+                    "The button will not submit the form properly"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category":"DOM",
+        "clues":[
+            {
+                "clue": "If element is an instance of an HTMLElement, what property could you use to get its direct parent node?",
+                "answers": [
+                    "element.dad",
+                    "element.parent",
+                    "element.parentNode",
+                    "element.getParent"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "If you want to change the style of an HTML element, which property of the element would you access?",
+                "answers": [
+                    "layout",
+                    "css",
+                    "style",
+                    "stylesheet"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which of the following best describes the DOM?",
+                "answers": [
+                    "A structured representation of a web document.",
+                    "A set of JavaScript functions for web pages.",
+                    "A style sheet language used for describing the look of web documents.",
+                    "A protocol for transferring web pages."
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which method would you use to add a child element to a parent element?",
+                "answers": [
+                    "parent.push(child)",
+                    "parent.appendChild(child)",
+                    "parent.addElement(child)",
+                    "parent.insertChild(child)"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "What method can you use to retrieve the value of an attribute from an element?",
+                "answers": [
+                    "getAttr()",
+                    "getAttribute()",
+                    "retrieveAttribute()",
+                    "attributeValue()"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "If you want to set or retrieve the text content of a node and its descendants, which property would you use?",
+                "answers": [
+                    "textValue",
+                    "innerText",
+                    "textContent",
+                    "nodeText"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "In the DOM, which is considered part of the HTML and can be set or changed?",
+                "answers": [
+                    "Methods",
+                    "Attributes",
+                    "Events",
+                    "Items"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "In the DOM, each item is considered a(n):",
+                "answers": [
+                    "Node",
+                    "Function",
+                    "Element",
+                    "Attribute"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "clue": "Which property would you use to get the next sibling of an element?",
+                "answers": [
+                    "nextElement",
+                    "followingSibling",
+                    "nextNode",
+                    "nextSibling"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "The DOM represents a document as a:",
+                "answers": [
+                    "Graph",
+                    "Tree",
+                    "Array",
+                    "List"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "clue": "Which method would you use to select an HTML element by its ID attribute?",
+                "answers": [
+                    "document.querySelector()",
+                    "document.getElementByName()",
+                    "document.getElementById()",
+                    "document.getElementsByClass()"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "clue": "Which method returns a NodeList of elements with a specified class name?",
+                "answers": [
+                    "document.getClassElements()",
+                    "document.querySelector()",
+                    "document.getElementsByClass()",
+                    "document.getElementsByClassName()"
+                ],
+                "correctAnswerIndex": 3
+            },
+            {
+                "clue": "Which of the following are types of nodes in the DOM? Select all that apply.",
+                "answers": [
+                    "Text Node",
+                    "Element Node",
+                    "Event Node",
+                    "Style Node"
+                ],
+                "correctAnswerIndices": [0, 1]
+            },
+            {
+                "clue": "Which method would you use to create a new element in the DOM?",
+                "answers": [
+                    "document.newElement()",
+                    "document.createElement()",
+                    "document.appendElement()",
+                    "document.add()"
+                ],
+                "correctAnswerIndex": 1
+            }
+        ]
+        
+    }
+]

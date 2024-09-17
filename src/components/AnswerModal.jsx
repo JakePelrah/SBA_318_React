@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { useGameContext } from "./GameProvider"
 
 export default function AnswerModal() {
@@ -5,11 +6,9 @@ export default function AnswerModal() {
 
 
     function submit(e) {
-        const radioButtons = document.getElementsByName('question')
-        const answer = [...radioButtons].filter(btn => btn.checked)[0]?.value
+        const {answer} = e.target.dataset
         const { category, amount } = document.getElementById('answer-modal').dataset
-        
-        if(answer)
+        if (answer)
             submitAnswer(category, amount, answer)
     }
 
@@ -21,32 +20,16 @@ export default function AnswerModal() {
 
                         <p id="modal-answer"></p>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" value="0" name="question" id="option-one" />
-                            <label class="form-check-label" >
-                                Question
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" value="1" name="question" id="option-two" />
-                            <label class="form-check-label" >
-                                Question
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" value="2" name="question" id="option-three" />
-                            <label class="form-check-label">
-                                Question
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" value="3" name="question" id="option-four" />
-                            <label class="form-check-label" >
-                                Question
-                            </label>
+                        <div id="question-buttons" className="d-flex flex-column gap-2" onClick={submit}>
+                            <button data-answer="1">Question</button>
+                            <button data-answer="2">Question</button>
+                            <button data-answer="3">Question</button>
+                            <button data-answer="4">Question</button>
                         </div>
 
-                        <button onClick={submit} >Submit</button>
+                        <div class="progress mt-2">
+                            <div id="progress-bar" style={{ "width": "100%" }} class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
 
                     </div>
                 </div>
