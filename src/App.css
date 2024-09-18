@@ -14,7 +14,7 @@ body {
 
 .display {
     background-color: #030874;
-    color: rgb(206, 166, 90);
+    color: #cea65a;
     font-weight: bold;
     height: 6em;
     width: 10em;
@@ -155,7 +155,7 @@ body {
 
 #answer-list{
     height: 10em;
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 
@@ -166,4 +166,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn{
+    background-color: #030874;
+    color: #cea65a;
+    font-weight: bold;
 }
