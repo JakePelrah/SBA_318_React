@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url'
 import path, { join } from 'node:path';
 import sqlite3 from 'sqlite3';
 import game from "./game.json" with { type: "json" };
+import database from "./database.json" with { type: "json" };
 
 const port = 3000
 const app = express()
@@ -33,6 +34,10 @@ app.get('/game', (req, res) => {
     // });
 })
 
+
+app.get('/getAnswers', (req, res)=>{
+    res.json(database)
+})
 
 // handle client routing, return all requests to the app
 app.get('*', (_req, res) => {

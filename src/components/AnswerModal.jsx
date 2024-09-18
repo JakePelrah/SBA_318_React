@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import { useGameContext } from "./GameProvider"
 
 export default function AnswerModal() {
-    const { submitAnswer } = useGameContext()
+    const { submitAnswer,outOfTime } = useGameContext()
 
 
     function submit(e) {
@@ -12,10 +12,20 @@ export default function AnswerModal() {
             submitAnswer(category, amount, answer)
     }
 
+
+    useEffect(()=>{
+
+        if(outOfTime){
+        const { category, amount } = document.getElementById('answer-modal').dataset
+
+            submitAnswer(category, amount, null)
+        }
+    },[outOfTime])
+
     return (
         <div id="answer-modal" class="modal" data-bs-backdrop="static" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
+                <div class="modal-content answer-modal-content">
                     <div class="modal-body">
 
                         <p id="modal-answer"></p>

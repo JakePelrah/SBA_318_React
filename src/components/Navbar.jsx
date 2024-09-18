@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
 
 
@@ -10,10 +12,10 @@ export default function Navbar() {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Create Question</a>
+                        <a class="nav-link" href="#">Random Game</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Create Board</a>
+                        <Link to="create" class="nav-link" href="">Create Game</Link>
                     </li>
                 </ul>
             </div>

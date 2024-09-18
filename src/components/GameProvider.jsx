@@ -1,11 +1,12 @@
 import { createContext, useContext, useRef, useState, useEffect } from "react";
-
+import { Navigate, Outlet } from 'react-router-dom';
 //131127
 const GameContext = createContext();
 export const useGameContext = () => useContext(GameContext)
 
-export default function GameProvider({ children }) {
+export default function GameProvider() {
     const [score, setScore] = useState(0)
+    const [outOfTime, setOutOfTime] = useState(false)
     const [questionsLeft, setQuestionsLeft] = useState(30)
     const [game, setGame] = useState([])
     const [round, setRound] = useState(0)
@@ -15,7 +16,13 @@ export default function GameProvider({ children }) {
 
 
     useEffect(() => {
-        modalRef.current = new bootstrap.Modal('#answer-modal', { keyboard: false })
+        try{
+            modalRef.current = new bootstrap.Modal('#answer-modal', { keyboard: false })
+        }
+        catch{
+            modalRef.current = {}
+        }
+       
         fetch('game')
             .then(res => res.json())
             .then(setGame)
@@ -57,7 +64,7 @@ export default function GameProvider({ children }) {
         //find question
         const { answers } = game[round].find(data => data.category === category)
         const selectedAnswer = answers.find(answer => answer.value === amount)
-      
+
         if (selectedAnswer.correctAnswer === answer) {
             setScore(score + amount)
         }
@@ -68,7 +75,6 @@ export default function GameProvider({ children }) {
         incrementCount()
         modalRef.current.hide()
         resetTimer()
-
     }
 
 
@@ -95,7 +101,9 @@ export default function GameProvider({ children }) {
         timerRef.current = setInterval(() => {
             if (timer <= 0) {
                 clearInterval(timerRef.current)
+                setOutOfTime(new Date())
             }
+            timer--
             progressBar.setAttribute('aria-valuenow', timer * 10)
             progressBar.style.width = timer * 10 + '%';
         }, 1000)
@@ -104,9 +112,9 @@ export default function GameProvider({ children }) {
     return (
         <GameContext.Provider value={{
             setScore, score, showAnswerModal,
-            incrementCount, submitAnswer,
+            incrementCount, submitAnswer, outOfTime
         }}>
-            {children}
+            <Outlet />
         </GameContext.Provider>
     );
 }
