@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react"
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Create() {
 
@@ -27,7 +28,7 @@ export default function Create() {
             fetch('/createQuestion', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ category, question, answers })
+                body: JSON.stringify({id:uuidv4(), category, question, answers })
             })
         }
 

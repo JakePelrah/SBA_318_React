@@ -35,13 +35,21 @@ app.get('/game', (req, res) => {
 })
 
 
-app.post('/createQuestion',(req, res)=>{
-    console.log(req.body)
+app.post('/createQuestion', (req, res) => {
+    let { id, category, question, answers } = req.body
+
+    let correctAnswers = Object.values(answers).filter(item => typeof item === 'boolean')
+    answers = Object.values(answers).filter(item => typeof item === 'string')
+
+    answers = JSON.stringify(answers)
+    correctAnswers = JSON.stringify(correctAnswers)
+
+    db.run("INSERT INTO questions VALUES(?, ?, ?, ?, ?)", [id, category, question, answers, correctAnswers])
     res.json({})
 })
-app.get('/getAnswers/:category', (req, res)=>{
-   
-    const {category} = req.params
+app.get('/getAnswers/:category', (req, res) => {
+
+    const { category } = req.params
     console.log(req.params, category)
     db.all('SELECT * FROM questions WHERE category = ?', [category], (err, rows) => {
         if (err) {
