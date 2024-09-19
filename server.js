@@ -35,6 +35,10 @@ app.get('/game', (req, res) => {
 })
 
 
+app.post('/createQuestion',(req, res)=>{
+    console.log(req.body)
+    res.json({})
+})
 app.get('/getAnswers/:category', (req, res)=>{
    
     const {category} = req.params

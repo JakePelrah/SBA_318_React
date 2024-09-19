@@ -15,7 +15,7 @@ export default function Navbar() {
                         <a className="nav-link" href="#">Random Game</a>
                     </li>
                     <li className="nav-item">
-                        <Link to="create" className="nav-link" href="">Create Game</Link>
+                        <Link to="create" className="nav-link" href="">Create Question</Link>
                     </li>
                 </ul>
             </div>
