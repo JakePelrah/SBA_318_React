@@ -35,8 +35,19 @@ app.get('/game', (req, res) => {
 })
 
 
-app.get('/getAnswers', (req, res)=>{
-    res.json(database)
+app.get('/getAnswers/:category', (req, res)=>{
+   
+    const {category} = req.params
+    console.log(req.params, category)
+    db.all('SELECT * FROM questions WHERE category = ?', [category], (err, rows) => {
+        if (err) {
+            res.json({})
+            throw err;
+        }
+        console.log(rows)
+        rows = rows.map(row => ({ ...row, answers: JSON.parse(row.questions) }))
+        res.json(rows)
+    });
 })
 
 // handle client routing, return all requests to the app

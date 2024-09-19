@@ -144,32 +144,59 @@ body {
     background-color: white;
 }
 
-.form-select{
+.form-select {
     text-align: center;
     border-radius: 0;
     box-shadow: none !important;
     font-weight: bold;
 }
 
-
-
-#answer-list{
+#answer-list {
     height: 10em;
     overflow-y: auto;
 }
 
-
-.drop-zone{
-    width: 10em;
-    height: 10em;
+.drop-zone {
+    width: 4em;
+    height: 2em;
     border: 1px dashed black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn{
+.btn {
+    color: #ffffff;
+    background-color: #053377;
+    font-weight: bold;
+    border: 1px solid white;
+}
+.btn:hover{
+    color: #ffffff;
+    background-color: #053377;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+#sidebar {
+    width: 25em;
+}
+
+#sidebar-list {
+    height: 12em;
+    width: 10em;
+    overflow-y: auto;
+    border-radius: 0;
+}
+
+.create-filled-slot {
     background-color: #030874;
     color: #cea65a;
-    font-weight: bold;
 }
+
+.category{
+    background-color: #ffffff;
+    text-align: center;
+    border: 1px solid grey;
+}
+

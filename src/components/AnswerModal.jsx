@@ -23,10 +23,10 @@ export default function AnswerModal() {
     },[outOfTime])
 
     return (
-        <div id="answer-modal" class="modal" data-bs-backdrop="static" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content answer-modal-content">
-                    <div class="modal-body">
+        <div id="answer-modal" className="modal" data-bs-backdrop="static" tabindex="-1">
+            <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content answer-modal-content">
+                    <div className="modal-body">
 
                         <p id="modal-answer"></p>
 
@@ -37,8 +37,8 @@ export default function AnswerModal() {
                             <button data-answer="4">Question</button>
                         </div>
 
-                        <div class="progress mt-2">
-                            <div id="progress-bar" style={{ "width": "100%" }} class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div className="progress mt-2">
+                            <div id="progress-bar" style={{ "width": "100%" }} className="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
 
                     </div>

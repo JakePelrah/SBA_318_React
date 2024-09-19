@@ -1501,47 +1501,10 @@
                     "**"
                 ],
                 "correctAnswerIndex": 3
-            },
-            {
-                "clue": "Given the following code, what is the value of result? let x = '5'; let y = 3; let result = x * y;",
-                "answers": [
-                    "15",
-                    "'53'",
-                    "NaN",
-                    "'15'"
-                ],
-                "correctAnswerIndex": 0
-            },
-            {
-                "clue": "Which statement will execute a block of code at least once, and then repeat it while a condition is true?",
-                "answers": [
-                    "repeat { } until (condition)",
-                    "do { } while (condition)",
-                    "while (condition) { } do { }",
-                    "loop { } if (condition)"
-                ],
-                "correctAnswerIndex": 1
-            },
-            {
-                "clue": "What will the expression “10\" + 5 return?",
-                "answers": [
-                    "TypeError",
-                    "15",
-                    "\"105\"",
-                    "NaN"
-                ],
-                "correctAnswerIndex": 2
-            },
-            {
-                "clue": "How can you explicitly throw an exception in JavaScript?",
-                "answers": [
-                    "raise('Error message')",
-                    "exit('Error message')",
-                    "throw new Error('Error message')",
-                    "alert('Error message')"
-                ],
-                "correctAnswerIndex": 2
             }
+        
+       
+
         ]
     },
     {
